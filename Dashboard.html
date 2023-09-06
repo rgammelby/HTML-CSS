@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="DashboardCSS.css" />
+    <title></title>
+</head>
+<body>
+    <ul>
+        <li><a href="https://github.com/rgammelby" target="_blank">GitHub</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a></li>
+        <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">CSS</a></li>
+        <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
+    </ul>
+    <br />
+    <h1>Arduino Dashboard</h1>
+    <p>This page displays a log of the sound spikes recorded by my arduino. </p>
+    <br />
+    <br />
+    <header>
+        <h2>
+            Log
+        </h2>
+        <iframe id="outputFile"
+                src="file:///C:\Users\zbcrabg\source\repos\COM3_Listener\COM3_Listener\bin\Debug\output.txt"></iframe>
+        <script>
+            // Function to reload log-container
+            function reloadLogContainer() {
+                var iframe = document.getElementById("outputFile");
+                iframe.src = iframe.src; // Setting iframe.src to be the new updated iframe.src.
+            }
+
+            // Set the timer to reload the iframe every 5 seconds (5000 milliseconds)
+            setInterval(reloadLogContainer, 5000);
+        </script>
+    </header>
+</body>
+</html>

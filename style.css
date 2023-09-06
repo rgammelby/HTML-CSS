@@ -1,0 +1,94 @@
+﻿body {
+    background-color: #212529;
+}
+
+h1, p {
+    color: #FFFFFF;
+    font-family: 'Lucida Console';
+}
+
+h2 {
+    position: absolute;
+    right: 625px;
+    top: 130px;
+    color: #FFF;
+    font-family: 'Lucida Console';
+}
+
+ul {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #050505;
+    border: 20px;
+    border-color: #FFFFFF;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lucida Console';
+}
+
+a:hover {
+    background-color: #d14343;
+}
+
+/*div.scroll {
+    background-color: #374151;
+    width: 600px;
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+    color: #d1d5db;
+    position: absolute;
+    right: 30px;
+    border: 1px solid #9ca3af;*/
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #666; /* Light grey (#f1f1f1) */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Grey */
+}
+
+    /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Dark grey */
+}
+iframe {
+    background-color: #374151;
+    width: 650px;
+    /*height: 300px;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    color: #d1d5db;
+    position: absolute;
+    right: 30px;
+    border: 1px solid #9ca3af;
+}
+
+iframe.document {
+    font-family: 'Comic Sans MS';
+}
